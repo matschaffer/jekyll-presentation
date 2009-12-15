@@ -1,7 +1,7 @@
 <div id="pager">
   {% for post in site.posts %}
     {% if post.url == page.url and last %}
-      <a href="{{last.url}}">Next</a>
+      <a href="{{site.root}}{{last.url}}">Next</a>
     {% endif %}
     {% assign last = post %}
   {% endfor %}
